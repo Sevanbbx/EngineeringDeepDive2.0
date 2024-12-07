@@ -12,7 +12,7 @@ int main(){
     } else if (!pid) {  // I am the child
         execl("/usr/bin/echo", "echo", "Hello from the child process", NULL);  
     } else if (pid == -1) { // In case of error
-        printf("Error");
+        printf("Error \n");
     }
     return 0;
 }

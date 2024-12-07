@@ -38,10 +38,10 @@ int main(){
         } else if (!pid) {  // I am the child
             printf("executing...\n");
             if (execl(path.c_str(), arg.c_str(), NULL) == -1) {
-                printf("Wrong command");
+                printf("Wrong command \n");
             }
         } else if (pid == -1) {  // in case of error
-            printf("Error");
+            printf("Error \n");
         }
     }
     return 0;

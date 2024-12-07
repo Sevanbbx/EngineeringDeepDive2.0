@@ -12,7 +12,7 @@ int main() {
     } else if (!pid) {  // I am the child
         execl("/usr/bin/grep", "grep", "Hello", "text.txt", NULL);
     } else if (pid == -1) {  // in case of error
-        printf("Error");
+        printf("Error \n");
     }
 
     return 0;

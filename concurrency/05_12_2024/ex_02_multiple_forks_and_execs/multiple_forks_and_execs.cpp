@@ -11,7 +11,7 @@ void create_child(const char *path, const char *arg, ...) {  // To avoid ugly in
     } else if (!pid) { // I am the child
         execl(path, arg, NULL);
     } else if (pid == -1) {  // In case of error
-        printf("Error");
+        printf("Error \n");
     }
 }
 
